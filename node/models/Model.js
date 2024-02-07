@@ -21,7 +21,8 @@ const HabitacionesModel = db.define('habitaciones', {
 const HotelesModel = db.define('hoteles', {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
     nombre: { type: DataTypes.STRING, allowNull: false },
-    cupo_maximo: { type: DataTypes.INTEGER, allowNull: false }
+    cupo_maximo: { type: DataTypes.INTEGER, allowNull: false },
+    imagen: { type: DataTypes.STRING, allowNull: true }
 }, {
     timestamps: false
 });
